@@ -25,6 +25,12 @@ namespace Fleck.Tests
             _wrapper.Bind(_endpoint);
             _wrapper.Listen(100);
         }
+        [TearDown]
+        public void TearDown()
+        {
+            _wrapper.Dispose();
+            _client.Dispose();
+        }
 
         [Test]
         public void ShouldCompleteAcceptTaskOnDispose()
