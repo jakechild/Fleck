@@ -12,4 +12,3 @@ namespace Fleck
         Pong = 10,
     }
 }
-

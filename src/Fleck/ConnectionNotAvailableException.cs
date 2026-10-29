@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace Fleck
 {
@@ -12,8 +12,7 @@ namespace Fleck
         {
         }
 
-        public ConnectionNotAvailableException(string message, Exception innerException)
-            : base(message, innerException)
+        public ConnectionNotAvailableException(string message, Exception innerException) : base(message, innerException)
         {
         }
     }
